@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寵物商品訂購表單</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #faf6f2;
+      margin: 0;
+      padding: 2rem;
+      color: #3e3e3e;
+    }
+    h1 {
+      text-align: center;
+      color: #775d4d;
+    }
+    form {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .form-section {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      margin-bottom: 0.25rem;
+    }
+    .form-group input, .form-group textarea, .form-group select {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .product-card {
+      background: #fff9f6;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+    button {
+      background-color: #b3907f;
+      color: white;
+      font-size: 1rem;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 2rem;
+      cursor: pointer;
+      display: block;
+      margin: 2rem auto 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>寵物保健品訂購表單</h1>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLScRdBSz8J_MavVisG-dW1dN4vrTc1PV-QgKguGOPjQcbG2BHA/formResponse" method="POST" target="_blank">
+    <div class="form-section">
+      <div class="form-group">
+        <label for="name">姓名</label>
+        <input type="text" name="entry.1082191938" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">電話</label>
+        <input type="text" name="entry.1039232225" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="address">地址</label>
+        <textarea name="entry.410310995" id="address" rows="2" required></textarea>
+      </div>
+    </div>
+
+    <div class="form-section product-grid">
+      <!-- Sample Product Card -->
+      <div class="product-card">
+        <img src="https://drive.google.com/uc?export=view&id=1pHD1kUrNNXZcL6D9YGItBMh1LgISrxyK" alt="肽舒壓">
+        <p>🧡 肽舒壓焦慮快走開（犬貓通用）</p>
+        <select name="entry.1082191938">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <!-- 再加入其他9個商品卡片 -->
+    </div>
+
+    <button type="submit">送出訂單</button>
+  </form>
+</body>
+</html>
